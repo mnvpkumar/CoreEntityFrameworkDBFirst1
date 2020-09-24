@@ -26,8 +26,7 @@ namespace CoreEntityFrameworkDBFirst1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<SampleContext>(option =>
-            option.UseSqlServer(Configuration.GetConnectionString("DBconnection")));
+            services.AddDbContext<SampleContext>(option => option.UseSqlServer(Configuration.GetConnectionString("DBconnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
